@@ -6,7 +6,8 @@ error()
 	exit $2
 }
 
-(( $# != 1 )) && error "Debe indicar un nivel de copia" 1
+
+(( $# != 1 )) && error "Debe indicar un nivel de copia en 0 o 1" 1
 #ruta de direcciones
 dir="$HOME/bin"
 backup="$HOME/backup"
