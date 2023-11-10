@@ -32,7 +32,7 @@ if [ -e $testigo ] ; then
 	--null --no-recursion -T- \
 	> "$backup/catalogo_$sufijo.txt" \
 	2> "$backup/errores_$sufijo.txt"
-else /home/bin/backup.sh 0	
+else $HOME/bin/backup.sh 0	
 fi
 ;;
 *) error "El nivel de copia debe ser 0 o 1" 2
